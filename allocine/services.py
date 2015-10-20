@@ -1,5 +1,5 @@
 from hashlib import sha1
-from urllib.parse import urlencode, quote_plus
+from urllib.parse import urlencode
 from allocine.utils import AndroidUserAgentSelector
 import datetime
 import base64
@@ -36,9 +36,22 @@ class AllocineService:
         session = requests.Session()
         response = session.send(request)
 
-        if response.status_code == requests.codes.ok:
-            return response.json()
-        return None
+        return response
+
+    def get_showtimes(self, zip=None, theaters=None, location=None, movie=None, date=None):
+        params = [('format', 'json'),]
+        if zip: params.append(('zip', zip))
+        if theaters: params.append(('theaters', theaters))
+        if location: params.append(('location', location))
+        if movie: params.append(('movie', movie))
+        if date: params.append(('date', date))
+
+        request = self.build_request('showtimelist', params)
+
+        session = requests.Session()
+        response = session.send(request)
+
+        return response
 
     def build_request(self, method, params=[]):
         """
