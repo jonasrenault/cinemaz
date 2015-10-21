@@ -4,7 +4,7 @@ from cinemas import views
 
 router = DefaultRouter()
 router.register(r'cinemas', views.CinemaViewSet)
-router.register(r'chains', views.CinemaChainViewSet)
+router.register(r'codes', views.CodeNameViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),

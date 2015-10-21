@@ -4,8 +4,8 @@ from allocine.services import AllocineService
 from cinemas import utils
 import simplejson as json
 from rest_framework import viewsets
-from cinemas.models import Cinema, CinemaChain
-from cinemas.serializers import CinemaSerializer, CinemaChainSerializer
+from cinemas.models import Cinema, CodeName
+from cinemas.serializers import CinemaSerializer, CodeNameSerializer
 import requests
 
 
@@ -44,6 +44,6 @@ class CinemaViewSet(viewsets.ModelViewSet):
     serializer_class = CinemaSerializer
 
 
-class CinemaChainViewSet(viewsets.ModelViewSet):
-    queryset = CinemaChain.objects.all()
-    serializer_class = CinemaChainSerializer
+class CodeNameViewSet(viewsets.ModelViewSet):
+    queryset = CodeName.objects.all()
+    serializer_class = CodeNameSerializer
