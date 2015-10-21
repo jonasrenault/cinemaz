@@ -1,11 +1,14 @@
 from django.http import HttpResponse, Http404
 from django.views.decorators.http import require_http_methods
 from allocine.services import AllocineService
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from rest_framework.reverse import reverse
 from cinemas import utils
 import simplejson as json
-from rest_framework import viewsets
-from cinemas.models import Cinema, CodeName
-from cinemas.serializers import CinemaSerializer, CodeNameSerializer
+from rest_framework_mongoengine import generics
+from cinemas.models import Cinema
+from cinemas.serializers import CinemaSerializer
 import requests
 
 
@@ -39,11 +42,13 @@ def get_show_times(request):
     return Http404("The request to the allocine api failed: " + response)
 
 
-class CinemaViewSet(viewsets.ModelViewSet):
+@api_view(('GET',))
+def api_root(request, format=None):
+    return Response({
+        'cinemas': reverse('cinema-list', request=request, format=format),
+    })
+
+
+class CinemaList(generics.ListCreateAPIView):
     queryset = Cinema.objects.all()
     serializer_class = CinemaSerializer
-
-
-class CodeNameViewSet(viewsets.ModelViewSet):
-    queryset = CodeName.objects.all()
-    serializer_class = CodeNameSerializer
