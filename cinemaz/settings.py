@@ -105,4 +105,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Mongo
+SESSION_ENGINE = 'mongoengine.django.sessions'
+SESSION_SERIALIZER = 'mongoengine.django.sessions.BSONSerializer'
+
 connect('cinema')

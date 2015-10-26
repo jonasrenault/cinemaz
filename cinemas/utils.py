@@ -1,31 +1,40 @@
-from cinemas.models import Cinema, CodeName
-from cinemas.serializers import CinemaSerializer
+from cinemas.serializers import CinemaSerializer, ShowtimeSerializer, MovieSerializer
+from cinemas.models import Cinema, Movie
 
 
 def save_or_update_cinema(json):
+    try:
+        cinema = Cinema.objects.get(code=json['code'])
+        serializer = Cinema(cinema, data=json)
+    except Cinema.DoesNotExist:
+        serializer = CinemaSerializer(data=json)
 
-    serializer = CinemaSerializer(data=json)
     if serializer.is_valid():
         cinema = serializer.save()
     return cinema
 
 
-def save_or_update_code_name(json):
+def save_showtime(json):
+    cinema = Cinema.objects.get(code=json['place']['theater']['code'])
+    if not cinema:
+        raise Cinema.DoesNotExist('Unable to find cinema for showtime.')
+
+    for showtime in json.get('movieShowtimes'):
+        movie_json = showtime['onShow']['movie']
+        save_or_update_movie(movie_json)
+
+
+def save_or_update_movie(json):
     try:
-        chain = CodeName.objects.get(code=json['code'])
-    except CodeName.DoesNotExist:
-        chain = CodeName()
+        movie = Movie.objects.get(code=json['code'])
+        serializer = MovieSerializer(movie, data=json)
+    except Movie.DoesNotExist:
+        serializer = MovieSerializer(data=json)
 
-    set_property_if_exists(chain, json, 'code')
-    set_property_if_exists(chain, json, 'name', '$')
-    chain.save()
-    return chain
+    if serializer.is_valid():
+        movie = serializer.save()
+    else:
+        print('Oups, serializer is not valid')
+        print(serializer.errors)
 
-
-def set_property_if_exists(model, json, model_property, json_property=None):
-    if not json_property:
-        json_property = model_property
-    try:
-        setattr(model, model_property, json[json_property])
-    except (AttributeError, KeyError):
-        pass
+    return movie

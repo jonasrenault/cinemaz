@@ -15,6 +15,82 @@ class Artwork(EmbeddedDocument):
     path = StringField()
 
 
+class Statistics(EmbeddedDocument):
+    FIELD_NAMES = {
+        'userRatingCount': 'user_rating_count',
+        'userReviewCount': 'user_review_count',
+        'userRating': 'user_rating',
+        'pressReviewCount': 'press_review_count',
+        'pressRating': 'press_rating',
+        'editorialRatingCount': 'editorial_rating_count',
+    }
+    user_rating_count = IntField(default=0)
+    user_review_count = IntField(default=0)
+    user_rating = FloatField()
+    press_review_count = IntField(default=0)
+    press_rating = FloatField()
+    editorial_rating_count = IntField(default=0)
+
+
+class CastingShort(EmbeddedDocument):
+    directors = ListField(StringField(max_length=200))
+    actors = ListField(StringField(max_length=200))
+    creators = ListField(StringField(max_length=200))
+
+
+class Release(EmbeddedDocument):
+    FIELD_NAMES = {
+        'releaseDate': 'release_date',
+        'releaseState': 'release_state',
+    }
+    release_date = StringField(required=True, max_length=200)
+    country = EmbeddedDocumentField(CodeName)
+    distributor = EmbeddedDocumentField(CodeName)
+    release_state = EmbeddedDocumentField(CodeName)
+
+
+class Trailer(EmbeddedDocument):
+    name = StringField(max_length=200)
+    code = IntField(required=True)
+    href = StringField(max_length=500)
+
+
+class Version(EmbeddedDocument):
+    FIELD_NAMES = {
+        '$': 'name',
+    }
+    code = IntField(required=True)
+    original = BooleanField(required=True)
+    name = StringField(max_length=200)
+    lang = IntField()
+
+
+class Screening(EmbeddedDocument):
+    date = DateTimeField(required=True)
+    code = IntField()
+
+
+class Movie(Document):
+    FIELD_NAMES = {
+        'originalTitle': 'original_title',
+        'synopsisShort': 'synopsis_short',
+        'castingShort': 'casting_short',
+    }
+    code = IntField(required=True, unique=True)
+    title = StringField(required=True, max_length=500)
+    original_title = StringField(max_length=1000)
+    synopsis = StringField()
+    synopsis_short = StringField()
+    runtime = IntField()
+    poster = EmbeddedDocumentField(Artwork)
+    release = EmbeddedDocumentField(Release)
+    nationality = ListField(EmbeddedDocumentField(CodeName))
+    genre = ListField(EmbeddedDocumentField(CodeName))
+    statistics = EmbeddedDocumentField(Statistics)
+    casting_short = EmbeddedDocumentField(CastingShort)
+    trailer = EmbeddedDocumentField(Trailer)
+
+
 class Cinema(Document):
     FIELD_NAMES = {
         'cinemaChain': 'chain',
@@ -43,3 +119,19 @@ class Cinema(Document):
     has_event = BooleanField(default=False)
     open_to_external_sales = BooleanField(default=False)
     updated_at = DateTimeField(default=datetime.datetime.now)
+
+
+class Showtime(Document):
+    FIELD_NAMES = {
+        'screenFormat': 'screen_format',
+        'releaseWeek': 'release_week',
+        'scr': 'screenings',
+    }
+    screen_format = EmbeddedDocumentField(CodeName, required=True)
+    version = EmbeddedDocumentField(Version, required=True)
+    release_week = BooleanField(required=True)
+    preview = BooleanField(required=True)
+    display = StringField(max_length=1000, required=True)
+    movie = ReferenceField(Movie, required=True)
+    theater = ReferenceField(Cinema, required=True)
+    screenings = ListField(EmbeddedDocumentField(Screening), required=True)

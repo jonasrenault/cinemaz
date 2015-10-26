@@ -7,8 +7,8 @@ from rest_framework.reverse import reverse
 from cinemas import utils
 import simplejson as json
 from rest_framework_mongoengine import generics
-from cinemas.models import Cinema
-from cinemas.serializers import CinemaSerializer
+from cinemas.models import Cinema, Movie
+from cinemas.serializers import CinemaSerializer, MovieSerializer
 import requests
 
 
@@ -37,6 +37,8 @@ def get_show_times(request):
 
     if response.status_code == requests.codes.ok:
         data = response.json()
+        for theater_showtime in data['feed']['theaterShowtimes']:
+            utils.save_showtime(theater_showtime)
         return HttpResponse(json.dumps(data), content_type="application/json")
 
     return Http404("The request to the allocine api failed: " + response)
@@ -46,9 +48,15 @@ def get_show_times(request):
 def api_root(request, format=None):
     return Response({
         'cinemas': reverse('cinema-list', request=request, format=format),
+        'movies': reverse('movie-list', request=request, format=format),
     })
 
 
 class CinemaList(generics.ListCreateAPIView):
     queryset = Cinema.objects.all()
     serializer_class = CinemaSerializer
+
+
+class MovieList(generics.ListCreateAPIView):
+    queryset = Movie.objects.all()
+    serializer_class = MovieSerializer
