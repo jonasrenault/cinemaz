@@ -1,0 +1,638 @@
+{
+    "originalTitle": "Y'aura t'il de la neige à Noël?",
+    "hasBluRay": 1,
+    "dvdReleaseDate": "1998-12-02",
+    "synopsisShort": "Dans une ferme du sud de la France, une mère élève avec tendresse ses sept enfants, tandis que le père, violent, mène une double vie.",
+    "genre": [
+        {
+            "$": "Drame",
+            "code": 13008
+        }
+    ],
+    "keywords": "Y aura-t-il de la neige à Noël ? ",
+    "hasDVD": 1,
+    "productionYear": 1996,
+    "link": [
+        {
+            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=14757.html",
+            "rel": "aco:web",
+            "name": "Y'aura t'il de la neige à Noël?"
+        },
+        {
+            "href": "http://www.allocine.fr/film/fichefilm-14757/casting/",
+            "rel": "aco:web_casting",
+            "name": "Casting Y'aura t'il de la neige à Noël?"
+        },
+        {
+            "href": "http://www.allocine.fr/film/fichefilm-14757/secrets-tournage/",
+            "rel": "aco:web_trivia",
+            "name": "Anecdotes Y'aura t'il de la neige à Noël?"
+        },
+        {
+            "href": "http://www.allocine.fr/seance/film-14757/",
+            "rel": "aco:web_showtimes",
+            "name": "Séances Y'aura t'il de la neige à Noël?"
+        },
+        {
+            "href": "http://www.allocine.fr/film/fichefilm-14757/critiques/spectateurs/",
+            "rel": "aco:web_publicreviews",
+            "name": "Critiques Spectateurs Y'aura t'il de la neige à Noël?"
+        },
+        {
+            "href": "http://www.allocine.fr/film/fichefilm-14757/critiques/presse/",
+            "rel": "aco:web_pressreviews",
+            "name": "Critiques presse Y'aura t'il de la neige à Noël?"
+        },
+        {
+            "href": "http://www.allocine.fr/film/fichefilm-14757/photos/",
+            "rel": "aco:web_shots",
+            "name": "Photos Y'aura t'il de la neige à Noël?"
+        },
+        {
+            "href": "http://www.allocine.fr/videos/fichefilm-14757/toutes/",
+            "rel": "aco:web_trailers",
+            "name": "Bandes annonces Y'aura t'il de la neige à Noël?"
+        },
+        {
+            "href": "http://www.allocine.fr/film/fichefilm-14757/vod-dvd/",
+            "rel": "aco:web_products",
+            "name": "Y'aura t'il de la neige à Noël?"
+        }
+    ],
+    "statistics": {
+        "nominationCount": 2,
+        "userRatingCount": 109,
+        "admissionCount": 836711,
+        "variationTopMovie": -650,
+        "rating": [
+            {
+                "$": 7,
+                "note": 5.0
+            },
+            {
+                "$": 2,
+                "note": 4.5
+            },
+            {
+                "$": 4,
+                "note": 4.0
+            },
+            {
+                "$": 1,
+                "note": 2.0
+            },
+            {
+                "$": 1,
+                "note": 0.5
+            }
+        ],
+        "wantToSeeCount": 20,
+        "releaseWeekPosition": -988,
+        "userReviewCount": 15,
+        "awardCount": 2,
+        "editorialRatingCount": 0,
+        "commentCount": 1,
+        "userRating": 3.58075953,
+        "newsCount": 1,
+        "fanCount": 16,
+        "photoCount": 1,
+        "theaterCount": 1,
+        "triviaCount": 3,
+        "videoCount": 1,
+        "rankTopMovie": 3187
+    },
+    "color": {
+        "$": "Couleur",
+        "code": 12001
+    },
+    "helpfulNegativeReview": [
+        {
+            "creationDate": "2013-03-24T18:29:00Z",
+            "writer": {
+                "avatar": "http://graph.facebook.com/1452370003/picture",
+                "name": "bsalvert",
+                "code": "Z20020201155528393476112"
+            },
+            "opinion": 36604876,
+            "code": 36604876,
+            "body": "un drame qui vous fera passer le temps à défaut de vous distraire.\nPLV : si vous aimez vous torturer.",
+            "rating": 2
+        }
+    ],
+    "hasVOD": 1,
+    "castMember": [
+        {
+            "activity": {
+                "$": "Réalisatrice",
+                "code": 8002
+            },
+            "person": {
+                "name": "Sandrine Veysset",
+                "code": 24229
+            }
+        },
+        {
+            "activity": {
+                "$": "Acteur",
+                "code": 8001
+            },
+            "picture": {
+                "path": "/medias/nmedia/18/35/38/17/19958164.jpg",
+                "href": "http://fr.web.img3.acsta.net/medias/nmedia/18/35/38/17/19958164.jpg",
+                "name": "Photo Y'aura t'il de la neige à Noël?"
+            },
+            "person": {
+                "name": "Daniel Duval",
+                "code": 12474
+            },
+            "role": "le père"
+        },
+        {
+            "activity": {
+                "$": "Actrice",
+                "code": 8001
+            },
+            "picture": {
+                "path": "/medias/nmedia/18/35/60/99/18741397.jpg",
+                "href": "http://fr.web.img5.acsta.net/medias/nmedia/18/35/60/99/18741397.jpg",
+                "name": "Photo Y'aura t'il de la neige à Noël?"
+            },
+            "person": {
+                "name": "Dominique Reymond",
+                "code": 16494
+            },
+            "role": "la mère"
+        },
+        {
+            "activity": {
+                "$": "Actrice",
+                "code": 8001
+            },
+            "person": {
+                "name": "Jessica Martinez",
+                "code": 24230
+            },
+            "role": "Jeanne"
+        },
+        {
+            "activity": {
+                "$": "Acteur",
+                "code": 8001
+            },
+            "person": {
+                "name": "Alexandre Roger",
+                "code": 24231
+            },
+            "role": "Bruno"
+        },
+        {
+            "activity": {
+                "$": "Acteur",
+                "code": 8001
+            },
+            "person": {
+                "name": "Xavier Colonna",
+                "code": 24232
+            },
+            "role": "Pierrot"
+        },
+        {
+            "activity": {
+                "$": "Actrice",
+                "code": 8001
+            },
+            "person": {
+                "name": "Fanny Rochetin",
+                "code": 24233
+            },
+            "role": "Marie"
+        },
+        {
+            "activity": {
+                "$": "Actrice",
+                "code": 8001
+            },
+            "person": {
+                "name": "Flavie Chimènes",
+                "code": 204980
+            },
+            "role": "Blandine"
+        },
+        {
+            "activity": {
+                "$": "Acteur",
+                "code": 8001
+            },
+            "person": {
+                "name": "Jeremy Chaix",
+                "code": 28385
+            },
+            "role": "Paul"
+        },
+        {
+            "activity": {
+                "$": "Acteur",
+                "code": 8001
+            },
+            "person": {
+                "name": "Guillaume Mathonnet",
+                "code": 204981
+            },
+            "role": "Remi"
+        },
+        {
+            "activity": {
+                "$": "Acteur",
+                "code": 8001
+            },
+            "person": {
+                "name": "Eric Huyard",
+                "code": 204982
+            },
+            "role": "Yvon"
+        },
+        {
+            "activity": {
+                "$": "Acteur",
+                "code": 8001
+            },
+            "person": {
+                "name": "Loys Cappatti",
+                "code": 204983
+            },
+            "role": "Bernard"
+        },
+        {
+            "activity": {
+                "$": "Acteur",
+                "code": 8001
+            },
+            "person": {
+                "name": "Marcel Guilloux-Delaunay",
+                "code": 204984
+            },
+            "role": "l'instituteur"
+        },
+        {
+            "activity": {
+                "$": "Actrice",
+                "code": 8001
+            },
+            "person": {
+                "name": "Andrée Veysset",
+                "code": 204985
+            }
+        },
+        {
+            "activity": {
+                "$": "Actrice",
+                "code": 8001
+            },
+            "person": {
+                "name": "Andrée Toussaint",
+                "code": 597902
+            }
+        },
+        {
+            "activity": {
+                "$": "Actrice",
+                "code": 8001
+            },
+            "person": {
+                "name": "Babeth Roger",
+                "code": 597903
+            }
+        },
+        {
+            "activity": {
+                "$": "Actrice",
+                "code": 8001
+            },
+            "person": {
+                "name": "Annette Pradier",
+                "code": 597904
+            }
+        },
+        {
+            "activity": {
+                "$": "Producteur",
+                "code": 8029
+            },
+            "picture": {
+                "path": "/pictures/184/083/18408314_20130528143816597.jpg",
+                "href": "http://fr.web.img4.acsta.net/pictures/184/083/18408314_20130528143816597.jpg",
+                "name": "Photo Y'aura t'il de la neige à Noël?"
+            },
+            "person": {
+                "name": "Humbert Balsan",
+                "code": 1936
+            }
+        },
+        {
+            "activity": {
+                "$": "Scénariste",
+                "code": 8004
+            },
+            "person": {
+                "name": "Sandrine Veysset",
+                "code": 24229
+            }
+        },
+        {
+            "activity": {
+                "$": "Scénariste",
+                "code": 8004
+            },
+            "person": {
+                "name": "Antoinette de Robien",
+                "code": 77260
+            }
+        },
+        {
+            "activity": {
+                "$": "Directeur de la photographie",
+                "code": 8037
+            },
+            "person": {
+                "name": "Hélène Louvart",
+                "code": 40791
+            }
+        },
+        {
+            "activity": {
+                "$": "Monteuse",
+                "code": 8046
+            },
+            "person": {
+                "name": "Nelly Quettier",
+                "code": 58454
+            }
+        },
+        {
+            "activity": {
+                "$": "Costumière",
+                "code": 8039
+            },
+            "person": {
+                "name": "Nathalie Raoul",
+                "code": 40890
+            }
+        },
+        {
+            "activity": {
+                "$": "Compositeur",
+                "code": 8003
+            },
+            "person": {
+                "name": "Henri Ancilotti",
+                "code": 77261
+            }
+        },
+        {
+            "activity": {
+                "$": "Musiques additionnelles (interprète)",
+                "code": 8093
+            },
+            "person": {
+                "name": "Salvatore Adamo",
+                "code": 35635
+            }
+        }
+    ],
+    "synopsis": "Dans une modeste ferme du sud de la France, une femme élève seule ses sept enfants. Pleine de courage, elle s’attache à ce que ces derniers ne manquent de rien, travaillant dur chaque jour sur l’exploitation du père des enfants, un homme brutal et autoritaire qui a délaissé cette partie bâtarde de sa progéniture afin de vivre avec sa famille officielle. Par son amour, son attention de tous les instants, la mère réussit à préserver des abus paternels, l’univers de ses enfants.",
+    "media": [
+        {
+            "type": {
+                "$": "Affiche",
+                "code": 31001
+            },
+            "link": [
+                {
+                    "href": "http://www.allocine.fr/film/fichefilm-14757/photos/detail/?cmediafile=21263740",
+                    "rel": "aco:web"
+                }
+            ],
+            "class": "picture",
+            "rcode": 21263740,
+            "code": 0,
+            "width": 1199,
+            "title": "Y'aura t'il de la neige à Noël? : Affiche",
+            "height": 1600,
+            "thumbnail": {
+                "path": "/pictures/15/12/04/09/44/120610.jpg",
+                "href": "http://fr.web.img2.acsta.net/pictures/15/12/04/09/44/120610.jpg"
+            }
+        },
+        {
+            "type": {
+                "$": "Bande-annonce",
+                "code": 31003
+            },
+            "trailerEmbed": "<div id='ACEmbed'><iframe src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=18805953&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'></iframe></div>",
+            "statistics": {
+                "commentCount": 2,
+                "viewCount": 3370
+            },
+            "class": "video",
+            "code": 18805953,
+            "version": {
+                "$": "Français",
+                "original": 1,
+                "code": 6001
+            },
+            "title": "Y'aura t'il de la neige à Noël? Bande-annonce VF",
+            "thumbnail": {
+                "path": "/videothumbnails/188/059/18805953_20131010153230068.jpg",
+                "href": "http://fr.web.img1.acsta.net/videothumbnails/188/059/18805953_20131010153230068.jpg"
+            },
+            "runtime": 83
+        }
+    ],
+    "release": {
+        "releaseDate": "1996-12-25",
+        "releaseState": {
+            "$": "Sortie en salle",
+            "code": 3004
+        },
+        "country": {
+            "$": "France",
+            "code": 5001
+        }
+    },
+    "movieType": {
+        "$": "Long-métrage",
+        "code": 4002
+    },
+    "helpfulPositiveReview": [
+        {
+            "creationDate": "2015-04-03T12:35:00Z",
+            "writer": {
+                "avatar": "http://fr.web.img3.acsta.net/i_w_h/users/02/9/4/8/Z20021216180627033411849/img/lwdd2esm.uok.jpg",
+                "name": "weihnachtsmann",
+                "code": "Z20021216180627033411849"
+            },
+            "opinion": 46742370,
+            "code": 46742370,
+            "body": "Un film tendre et délicat mais violent par son sujet et dramatique au final. Un portrait attachant en tout cas de cette femme courageuse. Beau film",
+            "rating": 4
+        }
+    ],
+    "runtime": 5400,
+    "language": [
+        {
+            "$": "Français",
+            "code": 6001
+        }
+    ],
+    "castingShort": {
+        "actors": "Daniel Duval, Dominique Reymond, Jessica Martinez, Alexandre Roger, Xavier Colonna",
+        "directors": "Sandrine Veysset"
+    },
+    "tag": [
+        {
+            "$": "campagne et champs",
+            "code": 1927
+        },
+        {
+            "$": "double vie",
+            "code": 264
+        },
+        {
+            "$": "enfance / enfant",
+            "code": 5151
+        },
+        {
+            "$": "Noël / Fêtes de Noël ",
+            "code": 202
+        },
+        {
+            "$": "parents",
+            "code": 5272
+        },
+        {
+            "$": "Portrait de femme",
+            "code": 994
+        },
+        {
+            "$": "Psychologies",
+            "code": 5478
+        },
+        {
+            "$": "rire et pleurer",
+            "code": 5258
+        },
+        {
+            "$": "scène de ménage / dispute",
+            "code": 1465
+        },
+        {
+            "$": "Senior",
+            "code": 5274
+        },
+        {
+            "$": "violence conjugale",
+            "code": 2505
+        }
+    ],
+    "bluRayReleaseDate": "2015-12-02",
+    "news": [
+        {
+            "pageCount": 1,
+            "category": [
+                {
+                    "$": "Stars",
+                    "code": 23004
+                }
+            ],
+            "code": 701804,
+            "title": "Interview : Sandrine Veysset",
+            "displayMode": {
+                "$": "Actualité",
+                "code": 117001
+            },
+            "publication": {
+                "dateStart": "2001-10-03T16:00:00"
+            }
+        }
+    ],
+    "trivia": [
+        {
+            "title": "Authenticité",
+            "publication": {
+                "dateStart": "2015-10-28T12:20:00"
+            },
+            "body": "Y'aura t'il de la neige à Noël? se déroule sur trois saisons : l’été, l’automne et l’hiver. Sandrine Veysset a choisi de tourner son film réellement autour de ces trois saisons pour lui donner un aspect authentique et documentaire plus forts, les saisons rythmant les activités de la ferme.",
+            "code": 18546988
+        },
+        {
+            "title": "Prix",
+            "publication": {
+                "dateStart": "2015-10-28T12:15:00"
+            },
+            "body": "Le film a remporté plusieurs distinctions : le Prix Louis Delluc, le Prix Cinémas en France au Festival de Cannes et la Meilleure première oeuvre aux César.",
+            "code": 18546985
+        },
+        {
+            "title": "Une fiction réaliste",
+            "publication": {
+                "dateStart": "2015-10-28T12:23:00"
+            },
+            "body": "Si Y'aura t'il de la neige à Noël? est une fiction, le film a été réalisé dans une optique de réalisme absolu et se veut un tableau anti-romantique du monde rural et ses difficultés notamment liées aux différentes tâches agricoles.",
+            "code": 18546991
+        }
+    ],
+    "hasShowtime": 1,
+    "trailer": {
+        "href": "http://www.allocine.fr/blogvision/18805953",
+        "name": "Bande-Annonce Y'aura t'il de la neige à Noël?",
+        "code": 18805953
+    },
+    "code": 14757,
+    "trailerEmbed": "<div id='ACEmbed'><iframe src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=18805953&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'></iframe><br /><a href=\"http://www.allocine.fr/film/fichefilm_gen_cfilm=14757.html\" target=\"_blank\">Y'aura t'il de la neige à Noël?</a></div>",
+    "poster": {
+        "href": "http://fr.web.img2.acsta.net/pictures/15/12/04/09/44/120610.jpg",
+        "name": "Affiche Y'aura t'il de la neige à Noël?"
+    },
+    "title": "Y'aura t'il de la neige à Noël?",
+    "hasSVOD": 1,
+    "nationality": [
+        {
+            "$": "France",
+            "code": 5001
+        }
+    ],
+    "festivalAward": [
+        {
+            "awardType": {
+                "$": "Film/Série - Personne",
+                "code": 94004
+            },
+            "parentFestival": {
+                "name": "César",
+                "code": 128
+            },
+            "name": "César de la Meilleure première oeuvre",
+            "parentEdition": {
+                "name": "1997",
+                "code": 18353003
+            },
+            "code": 18350733
+        },
+        {
+            "awardType": {
+                "$": "Film/Série - Personne",
+                "code": 94004
+            },
+            "parentFestival": {
+                "name": "Prix Louis Delluc",
+                "code": 2658
+            },
+            "name": "Prix Louis Delluc",
+            "parentEdition": {
+                "name": "1996",
+                "code": 18355359
+            },
+            "code": 18353670
+        }
+    ]
+}

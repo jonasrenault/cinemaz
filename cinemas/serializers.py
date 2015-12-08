@@ -2,7 +2,7 @@ from django.utils.timezone import get_current_timezone
 from datetime import datetime
 from rest_framework_mongoengine import serializers as drfme_serializers
 from rest_framework import serializers as drf_serializers
-from cinemas.models import Cinema, CodeName, Showtime, Screening, Movie, Release, Statistics
+from cinemas.models import Cinema, CodeName, Showtime, Screening, Movie, Release, Statistics, CastingShort
 
 
 class CustomModelSerializer(drf_serializers.ModelSerializer):
@@ -64,7 +64,6 @@ class ScreeningSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocum
         return validated_data
 
 
-
 class ShowtimeSerializer(CustomModelSerializer, drfme_serializers.DocumentSerializer):
     class Meta:
         model = Showtime
@@ -106,12 +105,13 @@ class CodeNameSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocume
 
 class ReleaseSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):
     country = CodeNameSerializer()
-    distributor = CodeNameSerializer()
+    distributor = CodeNameSerializer(required=False)
     release_state = CodeNameSerializer()
 
     class Meta:
         model = Release
         fields = ('release_date', 'country', 'distributor', 'release_state')
+        depth = 2
 
     def to_internal_value(self, data):
         update_json_keys(data, Release.FIELD_NAMES)
@@ -120,9 +120,6 @@ class ReleaseSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumen
             raise drf_serializers.ValidationError({
                 'release_date': 'This field is required.'
             })
-
-
-
         return super(ReleaseSerializer, self).to_internal_value(data)
 
     def is_valid(self, raise_exception=False):
@@ -142,6 +139,12 @@ class ReleaseSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumen
         return valid
 
 
+class CastingShortSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):
+    class Meta:
+        model = CastingShort
+        fields = ('actors', 'directors', 'creators')
+
+
 class StatisticsSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):
     class Meta:
         model = Statistics
@@ -158,11 +161,13 @@ class MovieSerializer(CustomModelSerializer, drfme_serializers.DocumentSerialize
     genre = CodeNameSerializer(many=True, required=False)
     release = ReleaseSerializer(required=False)
     statistics = StatisticsSerializer(required=False)
+    casting_short = CastingShortSerializer(required=False)
 
     class Meta:
         model = Movie
-        fields = ('code', 'title', 'original_title', 'synopsis', 'synopsis_short', 'runtime', 'poster', 'release',
-                  'nationality', 'genre', 'statistics', 'casting_short', 'trailer')
+        fields = ('code', 'title', 'original_title', 'synopsis', 'synopsis_short', 'runtime', 'nationality', 'genre',
+                  'release', 'statistics', 'casting_short')
+        depth = 3
 
     def to_internal_value(self, data):
         update_json_keys(data, Movie.FIELD_NAMES)
@@ -180,6 +185,35 @@ class MovieSerializer(CustomModelSerializer, drfme_serializers.DocumentSerialize
 
         return valid
 
+    def create(self, validated_data):
+        nationalities = validated_data.pop('nationality')
+        genres = validated_data.pop('genre')
+
+        movie = super(MovieSerializer, self).create(validated_data)
+
+        for nationality in nationalities:
+            movie.nationality.append(CodeName(**nationality))
+
+        for genre in genres:
+            movie.genre.append(CodeName(**genre))
+
+        movie.save()
+        return movie
+
+    def update(self, instance, validated_data):
+        nationalities = validated_data.pop('nationality')
+        genres = validated_data.pop('genre')
+
+        updated_instance = super(MovieSerializer, self).update(instance, validated_data)
+
+        for nationality in nationalities:
+            updated_instance.nationalities.append(CodeName(**nationality))
+
+        for genre in genres:
+            updated_instance.genre.append(CodeName(**genre))
+
+        updated_instance.save()
+        return updated_instance
 
 
 class CinemaSerializer(CustomModelSerializer, drfme_serializers.DocumentSerializer):

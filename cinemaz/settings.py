@@ -109,4 +109,9 @@ STATIC_URL = '/static/'
 SESSION_ENGINE = 'mongoengine.django.sessions'
 SESSION_SERIALIZER = 'mongoengine.django.sessions.BSONSerializer'
 
-connect('cinema')
+MONGO_DATABASE_NAME = 'cinema'
+
+connect(MONGO_DATABASE_NAME)
+
+
+TEST_RUNNER = 'cinemas.tests.nosql_test_runner.MongoTestRunner'

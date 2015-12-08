@@ -1,0 +1,29 @@
+{
+    "cinemaChain": {
+        "$": "UGC",
+        "code": 81001
+    },
+    "openToExternalSales": 1,
+    "code": "C0102",
+    "screenCount": 4,
+    "postalCode": "75006",
+    "subway": "Odeon",
+    "city": "Paris 6e arrondissement",
+    "link": [
+        {
+            "href": "http://www.allocine.fr/seance/salle_gen_csalle=C0102.html",
+            "rel": "aco:web"
+        }
+    ],
+    "area": "Île-de-France",
+    "name": "UGC Danton",
+    "geoloc": {
+        "long": 2.33907,
+        "lat": 48.85215
+    },
+    "address": "99, bd Saint-Germain",
+    "picture": {
+        "path": "/pictures/210/896/21089696_20140326171352966.jpg",
+        "href": "http://fr.web.img5.acsta.net/pictures/210/896/21089696_20140326171352966.jpg"
+    }
+}

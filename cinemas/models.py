@@ -33,9 +33,9 @@ class Statistics(EmbeddedDocument):
 
 
 class CastingShort(EmbeddedDocument):
-    directors = ListField(StringField(max_length=200))
-    actors = ListField(StringField(max_length=200))
-    creators = ListField(StringField(max_length=200))
+    directors = StringField(max_length=200)
+    actors = StringField(max_length=200)
+    creators = StringField(max_length=200)
 
 
 class Release(EmbeddedDocument):
