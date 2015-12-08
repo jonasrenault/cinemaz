@@ -18,10 +18,17 @@ class AllocineService:
         self.imgBaseUrl = 'http://images.allocine.fr'
         self.userAgentSelector = AndroidUserAgentSelector()
 
-    def get_movie(self, allocine_code, profile='small'):
-        params = [('code', allocine_code),
-                  ('profile', 'large'),
+    def get_movie(self, code, profile='large'):
+        """
+        Sends a request to fetch movie information.
+        :param code:  identifiant du film (entier)
+        :param profile: (optionnel) degré d'informations renvoyées (valeurs possibles : small, medium, large)
+        :return:
+        """
+        params = [('code', code),
+                  ('profile', profile),
                   ('format', 'json')]
+
         request = self.build_request('movie', params)
 
         session = requests.Session()
@@ -29,8 +36,30 @@ class AllocineService:
 
         return response
 
-    def get_theaters(self, zip):
-        params = [('zip', zip), ('profile', 'large'), ('format', 'json')]
+    def get_theaters(self, zip=None, profile='large', code=None, location=None, count=None, page=None):
+        """
+        Sends a request to fetch cinemas. One of zip, theater, or location is mandatory
+
+        :param zip:
+        :param profile: (optionnel) degré d'informations renvoyées (valeurs possibles : small, medium, large)
+        :param code:
+        :param location:
+        :param count:
+        :param page:
+        :return:
+        """
+        params = [('format', 'json'), ('profile', profile)]
+        if zip is not None:
+            params.append(('zip', zip))
+        if code is not None:
+            params.append(('theater', code))
+        if location is not None:
+            params.append(('location', location))
+        if count is not None:
+            params.append(('count', count))
+        if page is not None:
+            params.append(('page', page))
+
         request = self.build_request('theaterlist', params)
 
         session = requests.Session()
@@ -38,13 +67,32 @@ class AllocineService:
 
         return response
 
-    def get_showtimes(self, zip=None, theaters=None, location=None, movie=None, date=None):
+    def get_showtimes(self, zip=None, theaters=None, location=None, movie=None, date=None, count=None, page=None):
+        """
+        Sends a request to fetch movie showtimes. One of theaters, zip, or location is mandatory
+
+        :param zip: code postal de la ville
+        :param theaters: liste de codes de cinémas (séparé par une virgule, exemple: P0728,P0093)
+        :param location:
+        :param movie: (optionnel) identifiant du film (si non précisé, affiche tous les films)
+        :param date: (optionnel) date au format YYYY-MM-DD (si non précisé, date du jour)
+        :return:
+        """
         params = [('format', 'json'),]
-        if zip: params.append(('zip', zip))
-        if theaters: params.append(('theaters', theaters))
-        if location: params.append(('location', location))
-        if movie: params.append(('movie', movie))
-        if date: params.append(('date', date))
+        if zip is not None:
+            params.append(('zip', zip))
+        if theaters is not None:
+            params.append(('theaters', theaters))
+        if location is not None:
+            params.append(('location', location))
+        if movie is not None:
+            params.append(('movie', movie))
+        if date is not None:
+            params.append(('date', date))
+        if count is not None:
+            params.append(('count', count))
+        if page is not None:
+            params.append(('page', page))
 
         request = self.build_request('showtimelist', params)
 
