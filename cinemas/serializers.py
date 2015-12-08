@@ -55,8 +55,8 @@ class ScreeningSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocum
             tz = get_current_timezone()
             dt = tz.localize(parsed_date.replace(hour=t.hour, minute=t.minute))
             validated_data.append({
-                'date' : dt,
-                'code' : time.get('code')
+                'date': dt,
+                'code': time.get('code')
             })
 
         # Return the validated values. This will be available as
@@ -80,14 +80,34 @@ class CodeNameSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocume
         fields = ('name', 'code')
 
     def to_internal_value(self, data):
+        """
+        Takes the unvalidated incoming data as input and returns the validated data that will be made available as
+        serializer.validated_data. The return value will also be passed to the .create() or .update() methods if .save()
+        is called on the serializer class.
+        """
         update_json_keys(data, CodeName.FIELD_NAMES)
-        return super(CodeNameSerializer, self).to_internal_value(data)
+        code = data.get('code')
+        name = data.get('name')
+        if not code:
+            raise drf_serializers.ValidationError({
+                'code': 'This field is required.'
+            })
+        if not name:
+            raise drf_serializers.ValidationError({
+                'name': 'This field is required.'
+            })
+
+        # Return the validated values.
+        return {
+            'code': int(code),
+            'name': name
+        }
 
 
 class ReleaseSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):
-    country = CodeNameSerializer(required=False)
-    distributor = CodeNameSerializer(required=False)
-    release_state = CodeNameSerializer(required=False)
+    country = CodeNameSerializer()
+    distributor = CodeNameSerializer()
+    release_state = CodeNameSerializer()
 
     class Meta:
         model = Release
@@ -95,6 +115,14 @@ class ReleaseSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumen
 
     def to_internal_value(self, data):
         update_json_keys(data, Release.FIELD_NAMES)
+        release_date = data.get('release_date')
+        if not release_date:
+            raise drf_serializers.ValidationError({
+                'release_date': 'This field is required.'
+            })
+
+
+
         return super(ReleaseSerializer, self).to_internal_value(data)
 
     def is_valid(self, raise_exception=False):
