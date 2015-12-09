@@ -1,0 +1,2036 @@
+{
+    "movieShowtimes": [
+        {
+            "preview": "false",
+            "version": {
+                "code": 6001,
+                "$": "Français",
+                "original": "false",
+                "lang": 6001
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "false",
+            "display": "Séances du mercredi 9 décembre 2015 : 10:30 (film à 10:45), 13:45 (film à 14:00), 16:00 (film à 16:15), 18:05 (film à 18:20)\r\nSéances du jeudi 10 décembre 2015 : 13:45 (film à 14:00), 16:00 (film à 16:15), 18:05 (film à 18:20)\r\nSéances du vendredi 11 décembre 2015 : 13:45 (film à 14:00), 16:00 (film à 16:15), 18:05 (film à 18:20)\r\nSéances du samedi 12 décembre 2015 : 13:45 (film à 14:00), 16:00 (film à 16:15), 18:05 (film à 18:20)\r\nSéances du dimanche 13 décembre 2015 : 10:30 (film à 10:40), 13:45 (film à 14:00), 16:00 (film à 16:15), 18:05 (film à 18:20)\r\nSéances du lundi 14 décembre 2015 : 13:45 (film à 14:00), 16:00 (film à 16:15), 18:05 (film à 18:20)\r\nSéances du mardi 15 décembre 2015 : 16:00 (film à 16:15), 18:05 (film à 18:20)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 236824720,
+                            "$": "18:05",
+                            "p": 15
+                        }
+                    ],
+                    "d": "2015-12-09"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824721,
+                            "$": "13:45",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824722,
+                            "$": "16:00",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824723,
+                            "$": "18:05",
+                            "p": 15
+                        }
+                    ],
+                    "d": "2015-12-10"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824724,
+                            "$": "13:45",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824725,
+                            "$": "16:00",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824726,
+                            "$": "18:05",
+                            "p": 15
+                        }
+                    ],
+                    "d": "2015-12-11"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824727,
+                            "$": "13:45",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824728,
+                            "$": "16:00",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824729,
+                            "$": "18:05",
+                            "p": 15
+                        }
+                    ],
+                    "d": "2015-12-12"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824730,
+                            "$": "10:30",
+                            "p": 10
+                        },
+                        {
+                            "code": 236824731,
+                            "$": "13:45",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824732,
+                            "$": "16:00",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824733,
+                            "$": "18:05",
+                            "p": 15
+                        }
+                    ],
+                    "d": "2015-12-13"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824734,
+                            "$": "13:45",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824735,
+                            "$": "16:00",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824736,
+                            "$": "18:05",
+                            "p": 15
+                        }
+                    ],
+                    "d": "2015-12-14"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824737,
+                            "$": "16:00",
+                            "p": 15
+                        },
+                        {
+                            "code": 236824738,
+                            "$": "18:05",
+                            "p": 15
+                        }
+                    ],
+                    "d": "2015-12-15"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "movieCertificate": {
+                        "certificate": {
+                            "code": 14029,
+                            "$": "A partir de 3 ans"
+                        }
+                    },
+                    "release": {
+                        "releaseDate": "2015-11-25",
+                        "releaseVersion": {
+                            "code": 143001,
+                            "$": "3D"
+                        }
+                    },
+                    "code": 195350,
+                    "runtime": 5640,
+                    "trailer": {
+                        "code": 19558143,
+                        "href": "http://www.allocine.fr/blogvision/19558143"
+                    },
+                    "castingShort": {
+                        "directors": "Peter Sohn",
+                        "actors": "Jean-Baptiste Charles, Olivia Bonamy, Xavier Fagnon, Eric Cantona, Guillaume Lebon"
+                    },
+                    "poster": {
+                        "href": "http://fr.web.img5.acsta.net/pictures/15/10/07/09/50/031416.jpg",
+                        "path": "/pictures/15/10/07/09/50/031416.jpg"
+                    },
+                    "link": [
+                        {
+                            "name": "Le Voyage d'Arlo",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=195350.html"
+                        }
+                    ],
+                    "statistics": {
+                        "editorialRatingCount": 0,
+                        "userReviewCount": 132,
+                        "userRating": 3.91646671,
+                        "pressRating": 3.3,
+                        "pressReviewCount": 20,
+                        "userRatingCount": 767
+                    },
+                    "genre": [
+                        {
+                            "code": 13026,
+                            "$": "Animation"
+                        },
+                        {
+                            "code": 13001,
+                            "$": "Aventure"
+                        },
+                        {
+                            "code": 13005,
+                            "$": "Comédie"
+                        }
+                    ],
+                    "trailerEmbed": "<div id='ACEmbed'><iframe src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=19558143&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'></iframe><br /><a href=\"http://www.allocine.fr/film/fichefilm_gen_cfilm=195350.html\" target=\"_blank\">Le Voyage d'Arlo</a></div>",
+                    "title": "Le Voyage d'Arlo"
+                }
+            }
+        },
+        {
+            "preview": "false",
+            "version": {
+                "code": 6002,
+                "$": "Anglais",
+                "original": "true",
+                "lang": 6002
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "false",
+            "display": "Séances du mercredi 16 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du jeudi 17 décembre 2015 : 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du vendredi 18 décembre 2015 : 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du samedi 19 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du dimanche 20 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du lundi 21 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du mardi 22 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 223447452,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447424,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447425,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447426,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447427,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-16"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223447428,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447429,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447430,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447431,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-17"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223447432,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447433,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447434,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447435,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-18"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223447453,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447436,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447437,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447438,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447439,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-19"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223447454,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447440,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447441,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447442,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447443,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-20"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223447455,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447444,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447445,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447446,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447447,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-21"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223447456,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447448,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447449,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447450,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223447451,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-22"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "poster": {
+                        "href": "http://fr.web.img4.acsta.net/pictures/15/10/18/18/56/052074.jpg",
+                        "path": "/pictures/15/10/18/18/56/052074.jpg"
+                    },
+                    "link": [
+                        {
+                            "name": "Star Wars - Le Réveil de la Force",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=215097.html"
+                        }
+                    ],
+                    "statistics": {
+                        "editorialRatingCount": 0
+                    },
+                    "genre": [
+                        {
+                            "code": 13001,
+                            "$": "Aventure"
+                        },
+                        {
+                            "code": 13025,
+                            "$": "Action"
+                        },
+                        {
+                            "code": 13021,
+                            "$": "Science fiction"
+                        }
+                    ],
+                    "release": {
+                        "releaseDate": "2015-12-16"
+                    },
+                    "code": 215097,
+                    "trailerEmbed": "<div id='ACEmbed'><iframe src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=19558259&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'></iframe><br /><a href=\"http://www.allocine.fr/film/fichefilm_gen_cfilm=215097.html\" target=\"_blank\">Star Wars - Le Réveil de la Force</a></div>",
+                    "runtime": 8160,
+                    "trailer": {
+                        "code": 19558259,
+                        "href": "http://www.allocine.fr/blogvision/19558259"
+                    },
+                    "title": "Star Wars - Le Réveil de la Force",
+                    "castingShort": {
+                        "directors": "J.J. Abrams",
+                        "actors": "Daisy Ridley, John Boyega, Oscar Isaac, Adam Driver, Harrison Ford"
+                    }
+                }
+            }
+        },
+        {
+            "preview": "false",
+            "version": {
+                "code": 6002,
+                "$": "Anglais",
+                "original": "true",
+                "lang": 6002
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "false",
+            "display": "Séances du mercredi 23 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du jeudi 24 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00)\r\nSéances du vendredi 25 décembre 2015 : 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du samedi 26 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du dimanche 27 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du lundi 28 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)\r\nSéances du mardi 29 décembre 2015 : 10:20 (film à 10:40), 12:50 (film à 13:10), 15:45 (film à 16:05), 18:40 (film à 19:00), 21:30 (film à 21:50)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 223692997,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223692998,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223692999,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693000,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693001,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-23"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223693002,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693003,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693004,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693005,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-24"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223693006,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693007,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693008,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693009,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-25"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223693010,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693011,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693012,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693013,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693014,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-26"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223693015,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693016,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693017,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693018,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693019,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-27"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223693020,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693021,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693022,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693023,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693024,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-28"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 223693025,
+                            "$": "10:20",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693026,
+                            "$": "12:50",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693027,
+                            "$": "15:45",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693028,
+                            "$": "18:40",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        },
+                        {
+                            "code": 223693029,
+                            "$": "21:30",
+                            "tk": "http://www.mk2.com/reservation?movie_visa=2015003541",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-29"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "poster": {
+                        "href": "http://fr.web.img4.acsta.net/pictures/15/10/18/18/56/052074.jpg",
+                        "path": "/pictures/15/10/18/18/56/052074.jpg"
+                    },
+                    "link": [
+                        {
+                            "name": "Star Wars - Le Réveil de la Force",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=215097.html"
+                        }
+                    ],
+                    "statistics": {
+                        "editorialRatingCount": 0
+                    },
+                    "genre": [
+                        {
+                            "code": 13001,
+                            "$": "Aventure"
+                        },
+                        {
+                            "code": 13025,
+                            "$": "Action"
+                        },
+                        {
+                            "code": 13021,
+                            "$": "Science fiction"
+                        }
+                    ],
+                    "release": {
+                        "releaseDate": "2015-12-16"
+                    },
+                    "code": 215097,
+                    "trailerEmbed": "<div id='ACEmbed'><iframe src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=19558259&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'></iframe><br /><a href=\"http://www.allocine.fr/film/fichefilm_gen_cfilm=215097.html\" target=\"_blank\">Star Wars - Le Réveil de la Force</a></div>",
+                    "runtime": 8160,
+                    "trailer": {
+                        "code": 19558259,
+                        "href": "http://www.allocine.fr/blogvision/19558259"
+                    },
+                    "title": "Star Wars - Le Réveil de la Force",
+                    "castingShort": {
+                        "directors": "J.J. Abrams",
+                        "actors": "Daisy Ridley, John Boyega, Oscar Isaac, Adam Driver, Harrison Ford"
+                    }
+                }
+            }
+        },
+        {
+            "preview": "false",
+            "version": {
+                "code": 6001,
+                "$": "Français",
+                "original": "false",
+                "lang": 6001
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "false",
+            "display": "Séances du mercredi 9 décembre 2015 : 20:05 (film à 20:25), 22:10 (film à 22:30)\r\nSéances du jeudi 10 décembre 2015 : 20:05 (film à 20:25), 22:10 (film à 22:30)\r\nSéances du vendredi 11 décembre 2015 : 20:05 (film à 20:25), 22:10 (film à 22:30)\r\nSéances du samedi 12 décembre 2015 : 20:05 (film à 20:25), 22:10 (film à 22:30)\r\nSéances du dimanche 13 décembre 2015 : 20:05 (film à 20:25), 22:10 (film à 22:30)\r\nSéances du lundi 14 décembre 2015 : 20:05 (film à 20:25), 22:10 (film à 22:30)\r\nSéances du mardi 15 décembre 2015 : 20:05 (film à 20:25), 22:10 (film à 22:30)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 236824850,
+                            "$": "20:05",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824851,
+                            "$": "22:10",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-09"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824852,
+                            "$": "20:05",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824853,
+                            "$": "22:10",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-10"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824854,
+                            "$": "20:05",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824855,
+                            "$": "22:10",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-11"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824856,
+                            "$": "20:05",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824857,
+                            "$": "22:10",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-12"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824858,
+                            "$": "20:05",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824859,
+                            "$": "22:10",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-13"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824860,
+                            "$": "20:05",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824861,
+                            "$": "22:10",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-14"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824862,
+                            "$": "20:05",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824863,
+                            "$": "22:10",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-15"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "poster": {
+                        "href": "http://fr.web.img2.acsta.net/pictures/15/09/22/14/40/282684.jpg",
+                        "path": "/pictures/15/09/22/14/40/282684.jpg"
+                    },
+                    "link": [
+                        {
+                            "name": "L'Hermine",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=231600.html"
+                        }
+                    ],
+                    "statistics": {
+                        "editorialRatingCount": 0,
+                        "userReviewCount": 186,
+                        "userRating": 3.79947972,
+                        "pressRating": 3.619047,
+                        "pressReviewCount": 21,
+                        "userRatingCount": 955
+                    },
+                    "genre": [
+                        {
+                            "code": 13002,
+                            "$": "Comédie dramatique"
+                        }
+                    ],
+                    "release": {
+                        "releaseDate": "2015-11-18"
+                    },
+                    "code": 231600,
+                    "trailerEmbed": "<div id='ACEmbed'><iframe src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=19557793&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'></iframe><br /><a href=\"http://www.allocine.fr/film/fichefilm_gen_cfilm=231600.html\" target=\"_blank\">L'Hermine</a></div>",
+                    "runtime": 5880,
+                    "trailer": {
+                        "code": 19557793,
+                        "href": "http://www.allocine.fr/blogvision/19557793"
+                    },
+                    "title": "L'Hermine",
+                    "castingShort": {
+                        "directors": "Christian Vincent",
+                        "actors": "Fabrice Luchini, Sidse Babett Knudsen, Eva Lallier, Corinne Masiero, Sophie-Marie Larrouy"
+                    }
+                }
+            }
+        },
+        {
+            "preview": "false",
+            "version": {
+                "code": 6001,
+                "$": "Français",
+                "original": "false",
+                "lang": 6001
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "true",
+            "display": "Séances du mercredi 9 décembre 2015 : 10:10 (film à 10:30), 12:35 (film à 12:55), 14:55 (film à 15:15), 17:15 (film à 17:35), 19:35 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du jeudi 10 décembre 2015 : 12:35 (film à 12:55), 14:55 (film à 15:15), 17:15 (film à 17:35), 19:35 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du vendredi 11 décembre 2015 : 12:35 (film à 12:55), 14:55 (film à 15:15), 17:15 (film à 17:35), 19:35 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du samedi 12 décembre 2015 : 10:10 (film à 10:30), 12:35 (film à 12:55), 14:55 (film à 15:15), 17:15 (film à 17:35), 19:35 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du dimanche 13 décembre 2015 : 10:10 (film à 10:30), 12:35 (film à 12:55), 14:55 (film à 15:15), 17:15 (film à 17:35), 19:35 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du lundi 14 décembre 2015 : 12:35 (film à 12:55), 14:55 (film à 15:15), 17:15 (film à 17:35), 19:35 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du mardi 15 décembre 2015 : 12:35 (film à 12:55), 14:55 (film à 15:15), 17:15 (film à 17:35), 19:35 (film à 19:55), 21:55 (film à 22:15)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 236824780,
+                            "$": "17:15",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824781,
+                            "$": "19:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824782,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-09"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824783,
+                            "$": "12:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824784,
+                            "$": "14:55",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824785,
+                            "$": "17:15",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824786,
+                            "$": "19:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824787,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-10"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824788,
+                            "$": "12:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824789,
+                            "$": "14:55",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824790,
+                            "$": "17:15",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824791,
+                            "$": "19:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824792,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-11"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824793,
+                            "$": "10:10",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824794,
+                            "$": "12:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824795,
+                            "$": "14:55",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824796,
+                            "$": "17:15",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824797,
+                            "$": "19:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824798,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-12"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824799,
+                            "$": "10:10",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824800,
+                            "$": "12:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824801,
+                            "$": "14:55",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824802,
+                            "$": "17:15",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824803,
+                            "$": "19:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824804,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-13"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824805,
+                            "$": "12:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824806,
+                            "$": "14:55",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824807,
+                            "$": "17:15",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824808,
+                            "$": "19:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824809,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-14"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824810,
+                            "$": "12:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824811,
+                            "$": "14:55",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824812,
+                            "$": "17:15",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824813,
+                            "$": "19:35",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824814,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-15"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "poster": {
+                        "href": "http://fr.web.img5.acsta.net/pictures/15/08/21/15/22/016306.jpg",
+                        "path": "/pictures/15/08/21/15/22/016306.jpg"
+                    },
+                    "link": [
+                        {
+                            "name": "Un + une",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=228049.html"
+                        }
+                    ],
+                    "statistics": {
+                        "editorialRatingCount": 0,
+                        "userReviewCount": 15,
+                        "userRating": 3.06055021,
+                        "pressRating": 3.434782,
+                        "pressReviewCount": 23,
+                        "userRatingCount": 85
+                    },
+                    "genre": [
+                        {
+                            "code": 13005,
+                            "$": "Comédie"
+                        }
+                    ],
+                    "release": {
+                        "releaseDate": "2015-12-09"
+                    },
+                    "code": 228049,
+                    "trailerEmbed": "<div id='ACEmbed'><iframe src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=19558777&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'></iframe><br /><a href=\"http://www.allocine.fr/film/fichefilm_gen_cfilm=228049.html\" target=\"_blank\">Un + une</a></div>",
+                    "runtime": 6780,
+                    "trailer": {
+                        "code": 19558777,
+                        "href": "http://www.allocine.fr/blogvision/19558777"
+                    },
+                    "title": "Un + une",
+                    "castingShort": {
+                        "directors": "Claude Lelouch",
+                        "actors": "Jean Dujardin, Elsa Zylberstein, Christopher Lambert, Alice Pol, Rahul Vohra"
+                    }
+                }
+            }
+        },
+        {
+            "preview": "false",
+            "version": {
+                "code": 6001,
+                "$": "Français",
+                "original": "false",
+                "lang": 6001
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "false",
+            "display": "Séances du mercredi 9 décembre 2015 : 12:30 (film à 12:50), 14:50 (film à 15:10), 17:30 (film à 17:50), 19:50 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du jeudi 10 décembre 2015 : 12:30 (film à 12:50), 14:50 (film à 15:10), 17:30 (film à 17:50), 19:50 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du vendredi 11 décembre 2015 : 12:30 (film à 12:50), 14:50 (film à 15:10), 17:30 (film à 17:50), 19:50 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du samedi 12 décembre 2015 : 12:30 (film à 12:50), 14:50 (film à 15:10), 17:30 (film à 17:50), 19:50 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du dimanche 13 décembre 2015 : 12:30 (film à 12:50), 14:50 (film à 15:10), 17:30 (film à 17:50), 19:50 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du lundi 14 décembre 2015 : 12:30 (film à 12:50), 14:50 (film à 15:10), 17:30 (film à 17:50), 19:50 (film à 19:55), 21:55 (film à 22:15)\r\nSéances du mardi 15 décembre 2015 : 12:30 (film à 12:50), 14:50 (film à 15:10), 17:30 (film à 17:50), 19:50 (film à 19:55), 21:55 (film à 22:15)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 236824817,
+                            "$": "17:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824818,
+                            "$": "19:50",
+                            "p": 5
+                        },
+                        {
+                            "code": 236824819,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-09"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824820,
+                            "$": "12:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824821,
+                            "$": "14:50",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824822,
+                            "$": "17:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824823,
+                            "$": "19:50",
+                            "p": 5
+                        },
+                        {
+                            "code": 236824824,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-10"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824825,
+                            "$": "12:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824826,
+                            "$": "14:50",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824827,
+                            "$": "17:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824828,
+                            "$": "19:50",
+                            "p": 5
+                        },
+                        {
+                            "code": 236824829,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-11"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824830,
+                            "$": "12:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824831,
+                            "$": "14:50",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824832,
+                            "$": "17:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824833,
+                            "$": "19:50",
+                            "p": 5
+                        },
+                        {
+                            "code": 236824834,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-12"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824835,
+                            "$": "12:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824836,
+                            "$": "14:50",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824837,
+                            "$": "17:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824838,
+                            "$": "19:50",
+                            "p": 5
+                        },
+                        {
+                            "code": 236824839,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-13"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824840,
+                            "$": "12:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824841,
+                            "$": "14:50",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824842,
+                            "$": "17:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824843,
+                            "$": "19:50",
+                            "p": 5
+                        },
+                        {
+                            "code": 236824844,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-14"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824845,
+                            "$": "12:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824846,
+                            "$": "14:50",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824847,
+                            "$": "17:30",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824848,
+                            "$": "19:50",
+                            "p": 5
+                        },
+                        {
+                            "code": 236824849,
+                            "$": "21:55",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-15"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "poster": {
+                        "href": "http://fr.web.img1.acsta.net/pictures/15/10/14/14/47/058028.jpg",
+                        "path": "/pictures/15/10/14/14/47/058028.jpg"
+                    },
+                    "link": [
+                        {
+                            "name": "21 nuits avec Pattie",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=231598.html"
+                        }
+                    ],
+                    "statistics": {
+                        "editorialRatingCount": 0,
+                        "userReviewCount": 110,
+                        "userRating": 2.80951667,
+                        "pressRating": 4.15,
+                        "pressReviewCount": 20,
+                        "userRatingCount": 500
+                    },
+                    "genre": [
+                        {
+                            "code": 13005,
+                            "$": "Comédie"
+                        }
+                    ],
+                    "release": {
+                        "releaseDate": "2015-11-25"
+                    },
+                    "code": 231598,
+                    "trailerEmbed": "<div id='ACEmbed'><iframe src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=19557737&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'></iframe><br /><a href=\"http://www.allocine.fr/film/fichefilm_gen_cfilm=231598.html\" target=\"_blank\">21 nuits avec Pattie</a></div>",
+                    "runtime": 6900,
+                    "trailer": {
+                        "code": 19557737,
+                        "href": "http://www.allocine.fr/blogvision/19557737"
+                    },
+                    "title": "21 nuits avec Pattie",
+                    "castingShort": {
+                        "directors": "Arnaud Larrieu, Jean-Marie Larrieu",
+                        "actors": "Isabelle Carré, Karin Viard, André Dussollier, Sergi López, Laurent Poitrenaux"
+                    }
+                }
+            }
+        },
+        {
+            "preview": "false",
+            "version": {
+                "code": 6004,
+                "$": "Italien",
+                "original": "true",
+                "lang": 6004
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "false",
+            "display": "Séances du mercredi 9 décembre 2015 : 10:20 (film à 10:40), 12:40 (film à 13:00), 15:10 (film à 15:30), 17:25 (film à 17:45), 19:40 (film à 20:00), 22:05 (film à 22:25)\r\nSéances du jeudi 10 décembre 2015 : 12:40 (film à 13:00), 15:10 (film à 15:30), 17:25 (film à 17:45), 19:40 (film à 20:00), 22:05 (film à 22:25)\r\nSéances du vendredi 11 décembre 2015 : 12:40 (film à 13:00), 15:10 (film à 15:30), 17:25 (film à 17:45), 19:40 (film à 20:00), 22:05 (film à 22:25)\r\nSéances du samedi 12 décembre 2015 : 10:20 (film à 10:40), 12:40 (film à 13:00), 15:10 (film à 15:30), 17:25 (film à 17:45), 19:40 (film à 20:00), 22:05 (film à 22:25)\r\nSéances du dimanche 13 décembre 2015 : 10:20 (film à 10:40), 12:40 (film à 13:00), 15:10 (film à 15:30), 17:25 (film à 17:45), 19:40 (film à 20:00), 22:05 (film à 22:25)\r\nSéances du lundi 14 décembre 2015 : 12:40 (film à 13:00), 15:10 (film à 15:30), 17:25 (film à 17:45), 19:40 (film à 20:00), 22:05 (film à 22:25)\r\nSéances du mardi 15 décembre 2015 : 12:40 (film à 13:00), 15:10 (film à 15:30), 17:25 (film à 17:45), 19:40 (film à 20:00), 22:05 (film à 22:25)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 236824742,
+                            "$": "17:25",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824743,
+                            "$": "19:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824744,
+                            "$": "22:05",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-09"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824745,
+                            "$": "12:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824746,
+                            "$": "15:10",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824747,
+                            "$": "17:25",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824748,
+                            "$": "19:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824749,
+                            "$": "22:05",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-10"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824750,
+                            "$": "12:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824751,
+                            "$": "15:10",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824752,
+                            "$": "17:25",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824753,
+                            "$": "19:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824754,
+                            "$": "22:05",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-11"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824755,
+                            "$": "10:20",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824756,
+                            "$": "12:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824757,
+                            "$": "15:10",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824758,
+                            "$": "17:25",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824759,
+                            "$": "19:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824760,
+                            "$": "22:05",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-12"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824761,
+                            "$": "10:20",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824762,
+                            "$": "12:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824763,
+                            "$": "15:10",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824764,
+                            "$": "17:25",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824765,
+                            "$": "19:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824766,
+                            "$": "22:05",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-13"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824767,
+                            "$": "12:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824768,
+                            "$": "15:10",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824769,
+                            "$": "17:25",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824770,
+                            "$": "19:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824771,
+                            "$": "22:05",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-14"
+                },
+                {
+                    "t": [
+                        {
+                            "code": 236824772,
+                            "$": "12:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824773,
+                            "$": "15:10",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824774,
+                            "$": "17:25",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824775,
+                            "$": "19:40",
+                            "p": 20
+                        },
+                        {
+                            "code": 236824776,
+                            "$": "22:05",
+                            "p": 20
+                        }
+                    ],
+                    "d": "2015-12-15"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "poster": {
+                        "href": "http://fr.web.img3.acsta.net/pictures/15/09/25/09/10/354717.jpg",
+                        "path": "/pictures/15/09/25/09/10/354717.jpg"
+                    },
+                    "link": [
+                        {
+                            "name": "Mia Madre",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=225672.html"
+                        }
+                    ],
+                    "statistics": {
+                        "editorialRatingCount": 0,
+                        "userReviewCount": 76,
+                        "userRating": 3.83129239,
+                        "pressRating": 4.333333,
+                        "pressReviewCount": 33,
+                        "userRatingCount": 389
+                    },
+                    "genre": [
+                        {
+                            "code": 13008,
+                            "$": "Drame"
+                        },
+                        {
+                            "code": 13005,
+                            "$": "Comédie"
+                        }
+                    ],
+                    "release": {
+                        "releaseDate": "2015-12-02"
+                    },
+                    "code": 225672,
+                    "trailerEmbed": "<div id='ACEmbed'><iframe src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=19552325&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'></iframe><br /><a href=\"http://www.allocine.fr/film/fichefilm_gen_cfilm=225672.html\" target=\"_blank\">Mia Madre</a></div>",
+                    "runtime": 6420,
+                    "trailer": {
+                        "code": 19552325,
+                        "href": "http://www.allocine.fr/blogvision/19552325"
+                    },
+                    "title": "Mia Madre",
+                    "castingShort": {
+                        "directors": "Nanni Moretti",
+                        "actors": "Margherita Buy, John Turturro, Giulia Lazzarini, Nanni Moretti, Beatrice Mancini"
+                    }
+                }
+            }
+        },
+        {
+            "preview": "false",
+            "version": {
+                "code": 6001,
+                "$": "Français",
+                "original": "false",
+                "lang": 6001
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "false",
+            "display": "Séances du mercredi 9 décembre 2015 : 10:40 (film à 10:50)\r\nSéances du samedi 12 décembre 2015 : 10:40 (film à 10:50)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 236824865,
+                            "$": "10:40",
+                            "p": 10
+                        }
+                    ],
+                    "d": "2015-12-12"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "poster": {
+                        "href": "http://fr.web.img1.acsta.net/pictures/15/06/17/15/48/259306.jpg",
+                        "path": "/pictures/15/06/17/15/48/259306.jpg"
+                    },
+                    "link": [
+                        {
+                            "name": "Petites casseroles",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=238629.html"
+                        }
+                    ],
+                    "statistics": {
+                        "pressReviewCount": 0,
+                        "userRatingCount": 10,
+                        "userRating": 3.34722233,
+                        "editorialRatingCount": 0,
+                        "userReviewCount": 4
+                    },
+                    "genre": [
+                        {
+                            "code": 13026,
+                            "$": "Animation"
+                        }
+                    ],
+                    "release": {
+                        "releaseDate": "2015-09-23"
+                    },
+                    "code": 238629,
+                    "trailerEmbed": "<div id='ACEmbed'><iframe src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=19555143&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'></iframe><br /><a href=\"http://www.allocine.fr/film/fichefilm_gen_cfilm=238629.html\" target=\"_blank\">Petites casseroles</a></div>",
+                    "runtime": 2460,
+                    "trailer": {
+                        "code": 19555143,
+                        "href": "http://www.allocine.fr/blogvision/19555143"
+                    },
+                    "title": "Petites casseroles",
+                    "castingShort": {
+                        "directors": "Uzi Geffenblad, Conor Finnegan, Eric Montchaud, Anna Kadykova, Beatrice Alemagna"
+                    }
+                }
+            }
+        },
+        {
+            "preview": "false",
+            "version": {
+                "code": 6001,
+                "$": "Français",
+                "original": "false",
+                "lang": 6001
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "false",
+            "display": "Séances du mardi 15 décembre 2015 : 14:00 (film à 14:15)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 236824866,
+                            "$": "14:00",
+                            "p": 15
+                        }
+                    ],
+                    "d": "2015-12-15"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "link": [
+                        {
+                            "name": "Connaissance du monde : Rome",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=243550.html"
+                        }
+                    ],
+                    "statistics": {
+                        "pressReviewCount": 0,
+                        "editorialRatingCount": 0,
+                        "userReviewCount": 0
+                    },
+                    "genre": [
+                        {
+                            "code": 13017,
+                            "$": "Divers"
+                        }
+                    ],
+                    "code": 243550,
+                    "runtime": 5400,
+                    "title": "Connaissance du monde : Rome"
+                }
+            }
+        },
+        {
+            "preview": "false",
+            "version": {
+                "code": 6002,
+                "$": "Anglais",
+                "original": "true",
+                "lang": 6002
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "false",
+            "display": "Séances du samedi 12 décembre 2015 : 11:00 (film à 11:05)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 236824867,
+                            "$": "11:00",
+                            "p": 5
+                        }
+                    ],
+                    "d": "2015-12-12"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "link": [
+                        {
+                            "name": "Docs et courts",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=243552.html"
+                        }
+                    ],
+                    "statistics": {
+                        "pressReviewCount": 0,
+                        "editorialRatingCount": 0,
+                        "userReviewCount": 0
+                    },
+                    "genre": [
+                        {
+                            "code": 13017,
+                            "$": "Divers"
+                        }
+                    ],
+                    "code": 243552,
+                    "runtime": 6000,
+                    "title": "Docs et courts"
+                }
+            }
+        },
+        {
+            "preview": "false",
+            "version": {
+                "code": 6002,
+                "$": "Anglais",
+                "original": "true",
+                "lang": 6002
+            },
+            "screenFormat": {
+                "code": 110002,
+                "$": "Numérique"
+            },
+            "releaseWeek": "false",
+            "display": "Séances du dimanche 13 décembre 2015 : 11:00 (film à 11:05)",
+            "scr": [
+                {
+                    "t": [
+                        {
+                            "code": 236824868,
+                            "$": "11:00",
+                            "p": 5
+                        }
+                    ],
+                    "d": "2015-12-13"
+                }
+            ],
+            "onShow": {
+                "movie": {
+                    "link": [
+                        {
+                            "name": "Si loin si proche #1",
+                            "rel": "aco:web",
+                            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=243554.html"
+                        }
+                    ],
+                    "statistics": {
+                        "pressReviewCount": 0,
+                        "editorialRatingCount": 0,
+                        "userReviewCount": 0
+                    },
+                    "genre": [
+                        {
+                            "code": 13017,
+                            "$": "Divers"
+                        }
+                    ],
+                    "code": 243554,
+                    "runtime": 6060,
+                    "title": "Si loin si proche #1"
+                }
+            }
+        }
+    ],
+    "place": {
+        "theater": {
+            "openToExternalSales": 1,
+            "geoloc": {
+                "long": 2.3932,
+                "lat": 48.848123
+            },
+            "code": "C0144",
+            "distance": 0.0,
+            "picture": {
+                "href": "http://fr.web.img4.acsta.net/medias/nmedia/18/72/94/99/19184365.jpg",
+                "path": "/medias/nmedia/18/72/94/99/19184365.jpg"
+            },
+            "link": [
+                {
+                    "href": "http://www.allocine.fr/seance/salle_gen_csalle=C0144.html",
+                    "rel": "aco:web"
+                }
+            ],
+            "cinemaChain": {
+                "code": 81004,
+                "$": "MK2"
+            },
+            "area": "Île-de-France",
+            "subway": "Nation.",
+            "city": "Paris 12e arrondissement",
+            "name": "MK2 Nation",
+            "postalCode": "75012",
+            "address": "133, bd Diderot"
+        }
+    }
+}

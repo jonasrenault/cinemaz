@@ -1,8 +1,6 @@
-from django.utils.timezone import get_current_timezone
-from datetime import datetime
 from rest_framework_mongoengine import serializers as drfme_serializers
 from rest_framework import serializers as drf_serializers
-from cinemas.models import Cinema, CodeName, Showtime, Screening, Movie, Release, Statistics, CastingShort, Trailer, \
+from cinemas.models import Cinema, CodeName, Movie, Release, Statistics, CastingShort, Trailer, \
     Artwork
 
 
@@ -27,51 +25,6 @@ def update_json_keys(data, key_dictionnary):
             if new_key:
                 data[new_key] = data[key]
                 del data[key]
-
-
-class ScreeningSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):
-    class Meta:
-        model = Screening
-        fields = ('date', 'code')
-
-    def to_internal_value(self, data):
-        date = data.get('d')
-        times = data.get('t')
-
-        # Perform the data validation.
-        if not date:
-            raise drf_serializers.ValidationError({
-                'd': 'This field is required.'
-            })
-
-        if not times:
-            raise drf_serializers.ValidationError({
-                't': 'This field is required.'
-            })
-
-        validated_data = list()
-        parsed_date = datetime.strptime(date, '%Y-%m-%d')
-        for time in times:
-            t = datetime.strptime(time.get('$'), '%H:%M')
-            tz = get_current_timezone()
-            dt = tz.localize(parsed_date.replace(hour=t.hour, minute=t.minute))
-            validated_data.append({
-                'date': dt,
-                'code': time.get('code')
-            })
-
-        # Return the validated values. This will be available as
-        # the `.validated_data` property.
-        return validated_data
-
-
-class ShowtimeSerializer(CustomModelSerializer, drfme_serializers.DocumentSerializer):
-    class Meta:
-        model = Showtime
-        fields = ('screen_format', 'version', 'release_week', 'preview', 'display', 'movie', 'theater', 'screenings')
-
-    def to_internal_value(self, data):
-        update_json_keys(data, Showtime.FIELD_NAMES)
 
 
 class CodeNameSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):

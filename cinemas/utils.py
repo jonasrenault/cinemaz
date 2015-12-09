@@ -1,4 +1,4 @@
-from cinemas.serializers import CinemaSerializer, ShowtimeSerializer, MovieSerializer
+from cinemas.serializers import CinemaSerializer, MovieSerializer
 from cinemas.models import Cinema, Movie
 
 
@@ -15,17 +15,6 @@ def save_or_update_cinema(json):
         print('Oups, serializer is not valid')
         print(serializer.errors)
     return cinema
-
-
-def save_showtime(json):
-    cinema = Cinema.objects.get(code=json['place']['theater']['code'])
-    if not cinema:
-        raise Cinema.DoesNotExist('Unable to find cinema for showtime.')
-
-    for showtime in json.get('movieShowtimes'):
-        movie_json = showtime['onShow']['movie']
-        save_or_update_movie(movie_json)
-
 
 def save_or_update_movie(json):
     try:

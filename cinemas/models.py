@@ -66,11 +66,6 @@ class Version(EmbeddedDocument):
     lang = IntField()
 
 
-class Screening(EmbeddedDocument):
-    date = DateTimeField(required=True)
-    code = IntField()
-
-
 class Movie(Document):
     FIELD_NAMES = {
         'originalTitle': 'original_title',
@@ -133,9 +128,14 @@ class Showtime(Document):
     }
     screen_format = EmbeddedDocumentField(CodeName, required=True)
     version = EmbeddedDocumentField(Version, required=True)
-    release_week = BooleanField(required=True)
-    preview = BooleanField(required=True)
-    display = StringField(max_length=1000, required=True)
+    release_week = BooleanField(default=False)
+    preview = BooleanField(default=False)
     movie = ReferenceField(Movie, required=True)
     theater = ReferenceField(Cinema, required=True)
-    screenings = ListField(EmbeddedDocumentField(Screening), required=True)
+    date = DateTimeField(required=True)
+    code = IntField()
+    ads = IntField()
+    ticket = StringField(max_length=2000)
+    seat_count = IntField()
+    screen = EmbeddedDocumentField(CodeName)
+
