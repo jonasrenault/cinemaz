@@ -2,7 +2,8 @@ from django.utils.timezone import get_current_timezone
 from datetime import datetime
 from rest_framework_mongoengine import serializers as drfme_serializers
 from rest_framework import serializers as drf_serializers
-from cinemas.models import Cinema, CodeName, Showtime, Screening, Movie, Release, Statistics, CastingShort
+from cinemas.models import Cinema, CodeName, Showtime, Screening, Movie, Release, Statistics, CastingShort, Trailer, \
+    Artwork
 
 
 class CustomModelSerializer(drf_serializers.ModelSerializer):
@@ -104,9 +105,9 @@ class CodeNameSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocume
 
 
 class ReleaseSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):
-    country = CodeNameSerializer()
+    country = CodeNameSerializer(required=False)
     distributor = CodeNameSerializer(required=False)
-    release_state = CodeNameSerializer()
+    release_state = CodeNameSerializer(required=False)
 
     class Meta:
         model = Release
@@ -139,6 +140,18 @@ class ReleaseSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumen
         return valid
 
 
+class ArtworkSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):
+    class Meta:
+        model = Artwork
+        fields = ('name', 'href', 'path')
+
+
+class TrailerSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):
+    class Meta:
+        model = Trailer
+        fields = ('name', 'href', 'code')
+
+
 class CastingShortSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):
     class Meta:
         model = CastingShort
@@ -162,11 +175,14 @@ class MovieSerializer(CustomModelSerializer, drfme_serializers.DocumentSerialize
     release = ReleaseSerializer(required=False)
     statistics = StatisticsSerializer(required=False)
     casting_short = CastingShortSerializer(required=False)
+    tag = CodeNameSerializer(many=True, required=False)
+    trailer = TrailerSerializer(required=False)
+    poster = ArtworkSerializer(required=False)
 
     class Meta:
         model = Movie
         fields = ('code', 'title', 'original_title', 'synopsis', 'synopsis_short', 'runtime', 'nationality', 'genre',
-                  'release', 'statistics', 'casting_short')
+                  'release', 'statistics', 'casting_short', 'tag', 'trailer', 'production_year', 'poster')
         depth = 3
 
     def to_internal_value(self, data):
@@ -181,13 +197,19 @@ class MovieSerializer(CustomModelSerializer, drfme_serializers.DocumentSerialize
 
         for embedded_field in self.embedded_document_serializer_fields:
             embedded_field.initial_data = self.validated_data.pop(embedded_field.field_name, drf_serializers.empty)
-            valid &= embedded_field.is_valid(raise_exception=raise_exception)
+            try:
+                valid_embedded = embedded_field.is_valid(raise_exception=raise_exception)
+                valid &= valid_embedded
+            except drf_serializers.SkipField:
+                # SkipField is called when a non required field is absent
+                pass
 
         return valid
 
     def create(self, validated_data):
         nationalities = validated_data.pop('nationality')
         genres = validated_data.pop('genre')
+        tags = validated_data.pop('tag') if 'tag' in validated_data else list()
 
         movie = super(MovieSerializer, self).create(validated_data)
 
@@ -197,12 +219,16 @@ class MovieSerializer(CustomModelSerializer, drfme_serializers.DocumentSerialize
         for genre in genres:
             movie.genre.append(CodeName(**genre))
 
+        for tag in tags:
+            movie.tag.append(CodeName(**tag))
+
         movie.save()
         return movie
 
     def update(self, instance, validated_data):
         nationalities = validated_data.pop('nationality')
         genres = validated_data.pop('genre')
+        tags = validated_data.pop('tag')
 
         updated_instance = super(MovieSerializer, self).update(instance, validated_data)
 
@@ -211,6 +237,9 @@ class MovieSerializer(CustomModelSerializer, drfme_serializers.DocumentSerialize
 
         for genre in genres:
             updated_instance.genre.append(CodeName(**genre))
+
+        for tag in tags:
+            updated_instance.tag.append(CodeName(**tag))
 
         updated_instance.save()
         return updated_instance

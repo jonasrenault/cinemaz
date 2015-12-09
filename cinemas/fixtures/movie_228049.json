@@ -1,0 +1,87 @@
+{
+    "originalTitle": "Un + une",
+    "genre": [
+        {
+            "$": "Comédie",
+            "code": 13005
+        }
+    ],
+    "synopsisShort": "Antoine ressemble aux héros des films dont il compose la musique. Il a du charme, du succès, et traverse la vie avec autant d’humour que de légèreté. Lorsqu’il part en Inde travailler sur une version très originale de Roméo et Juliette, il rencontre Anna, une femme qui ne lui ressemble en rien, mais qui l’attire plus que tout. Ensemble, ils vont vivre une incroyable aventure…",
+    "castingShort": {
+        "directors": "Claude Lelouch",
+        "actors": "Jean Dujardin, Elsa Zylberstein, Christopher Lambert, Alice Pol, Rahul Vohra"
+    },
+    "trailer": {
+        "href": "http://www.allocine.fr/blogvision/19558777",
+        "code": 19558777,
+        "name": "Bande-Annonce Un + une"
+    },
+    "poster": {
+        "href": "http://fr.web.img5.acsta.net/pictures/15/08/21/15/22/016306.jpg",
+        "name": "Affiche Un + une"
+    },
+    "title": "Un + une",
+    "movieType": {
+        "$": "Long-métrage",
+        "code": 4002
+    },
+    "productionYear": 2014,
+    "runtime": 6780,
+    "nationality": [
+        {
+            "$": "France",
+            "code": 5001
+        }
+    ],
+    "link": [
+        {
+            "rel": "aco:web",
+            "href": "http://www.allocine.fr/film/fichefilm_gen_cfilm=228049.html",
+            "name": "Un + une"
+        },
+        {
+            "rel": "aco:web_casting",
+            "href": "http://www.allocine.fr/film/fichefilm-228049/casting/",
+            "name": "Casting Un + une"
+        },
+        {
+            "rel": "aco:web_trivia",
+            "href": "http://www.allocine.fr/film/fichefilm-228049/secrets-tournage/",
+            "name": "Anecdotes Un + une"
+        },
+        {
+            "rel": "aco:web_showtimes",
+            "href": "http://www.allocine.fr/seance/film-228049/",
+            "name": "Séances Un + une"
+        },
+        {
+            "rel": "aco:web_publicreviews",
+            "href": "http://www.allocine.fr/film/fichefilm-228049/critiques/spectateurs/",
+            "name": "Critiques Spectateurs Un + une"
+        },
+        {
+            "rel": "aco:web_pressreviews",
+            "href": "http://www.allocine.fr/film/fichefilm-228049/critiques/presse/",
+            "name": "Critiques presse Un + une"
+        },
+        {
+            "rel": "aco:web_shots",
+            "href": "http://www.allocine.fr/film/fichefilm-228049/photos/",
+            "name": "Photos Un + une"
+        },
+        {
+            "rel": "aco:web_trailers",
+            "href": "http://www.allocine.fr/videos/fichefilm-228049/toutes/",
+            "name": "Bandes annonces Un + une"
+        },
+        {
+            "rel": "aco:web_products",
+            "href": "http://www.allocine.fr/film/fichefilm-228049/vod-dvd/",
+            "name": "Un + une"
+        }
+    ],
+    "code": 228049,
+    "release": {
+        "releaseDate": "2015-12-09"
+    }
+}

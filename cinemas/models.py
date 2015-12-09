@@ -13,6 +13,7 @@ class CodeName(EmbeddedDocument):
 class Artwork(EmbeddedDocument):
     href = StringField()
     path = StringField()
+    name = StringField()
 
 
 class Statistics(EmbeddedDocument):
@@ -75,6 +76,7 @@ class Movie(Document):
         'originalTitle': 'original_title',
         'synopsisShort': 'synopsis_short',
         'castingShort': 'casting_short',
+        'productionYear': 'production_year'
     }
     code = IntField(required=True, unique=True)
     title = StringField(required=True, max_length=500)
@@ -89,6 +91,8 @@ class Movie(Document):
     statistics = EmbeddedDocumentField(Statistics)
     casting_short = EmbeddedDocumentField(CastingShort)
     trailer = EmbeddedDocumentField(Trailer)
+    tag = ListField(EmbeddedDocumentField(CodeName))
+    production_year = IntField()
 
 
 class Cinema(Document):
