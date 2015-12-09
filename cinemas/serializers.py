@@ -1,7 +1,7 @@
 from rest_framework_mongoengine import serializers as drfme_serializers
 from rest_framework import serializers as drf_serializers
 from cinemas.models import Cinema, CodeName, Movie, Release, Statistics, CastingShort, Trailer, \
-    Artwork
+    Artwork, Showtime
 
 
 class CustomModelSerializer(drf_serializers.ModelSerializer):
@@ -205,3 +205,15 @@ class CinemaSerializer(CustomModelSerializer, drfme_serializers.DocumentSerializ
                 pass
 
         return valid
+
+
+class TheaterShowtimeSerializer:
+
+    def __init__(self, data):
+        self.initial_data = data
+
+    def save(self):
+
+        showtime = Showtime()
+
+        return showtime
