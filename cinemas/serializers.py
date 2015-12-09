@@ -86,22 +86,7 @@ class CodeNameSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocume
         is called on the serializer class.
         """
         update_json_keys(data, CodeName.FIELD_NAMES)
-        code = data.get('code')
-        name = data.get('name')
-        if not code:
-            raise drf_serializers.ValidationError({
-                'code': 'This field is required.'
-            })
-        if not name:
-            raise drf_serializers.ValidationError({
-                'name': 'This field is required.'
-            })
-
-        # Return the validated values.
-        return {
-            'code': int(code),
-            'name': name
-        }
+        return super(CodeNameSerializer, self).to_internal_value(data)
 
 
 class ReleaseSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumentSerializer):
@@ -116,11 +101,6 @@ class ReleaseSerializer(CustomModelSerializer, drfme_serializers.EmbeddedDocumen
 
     def to_internal_value(self, data):
         update_json_keys(data, Release.FIELD_NAMES)
-        release_date = data.get('release_date')
-        if not release_date:
-            raise drf_serializers.ValidationError({
-                'release_date': 'This field is required.'
-            })
         return super(ReleaseSerializer, self).to_internal_value(data)
 
     def is_valid(self, raise_exception=False):
@@ -202,7 +182,7 @@ class MovieSerializer(CustomModelSerializer, drfme_serializers.DocumentSerialize
                 valid &= valid_embedded
             except drf_serializers.SkipField:
                 # SkipField is called when a non required field is absent
-                pass
+                embedded_field._validated_data = {}
 
         return valid
 
@@ -265,6 +245,10 @@ class CinemaSerializer(CustomModelSerializer, drfme_serializers.DocumentSerializ
 
         for embedded_field in self.embedded_document_serializer_fields:
             embedded_field.initial_data = self.validated_data.pop(embedded_field.field_name, drf_serializers.empty)
-            valid &= embedded_field.is_valid(raise_exception=raise_exception)
+            try:
+                valid &= embedded_field.is_valid(raise_exception=raise_exception)
+            except drf_serializers.SkipField:
+                # SkipField is called when a non required field is absent
+                pass
 
         return valid
