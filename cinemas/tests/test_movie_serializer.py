@@ -79,7 +79,6 @@ class MovieSerializerTestCase(SimpleTestCase):
 
         serializer = MovieSerializer(data=self.json)
         serializer.is_valid()
-        print(serializer.errors)
         serializer.save()
 
         self.check_movie_from_json()
