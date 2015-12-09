@@ -11,6 +11,9 @@ def save_or_update_cinema(json):
 
     if serializer.is_valid():
         cinema = serializer.save()
+    else:
+        print('Oups, serializer is not valid')
+        print(serializer.errors)
     return cinema
 
 

@@ -18,7 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^cinemas/', include('cinemas.urls')),
+    url(r'^', include('cinemas.urls')),
     url(r'^allocine/', include('allocine.urls')),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
